@@ -23,20 +23,6 @@ const NavbarContent = styled.div`
   flex-wrap: wrap;
 `;
 
-// Styled component for the logo or title
-const Logo = styled.h1`
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #ffdd40;
-  }
-`;
-
 // Styled component for the Navbar links container
 const NavLinks = styled.div<{ isOpen: boolean }>`
   display: flex;
