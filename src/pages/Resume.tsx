@@ -1,6 +1,7 @@
 // src/components/Resume.tsx
 import React from "react";
 import styled from "styled-components";
+import Layout from "../components/Layout";
 
 // Styled components for the Resume section
 const ResumeContainer = styled.div`
@@ -36,51 +37,54 @@ const ListItem = styled.li`
 
 const Resume: React.FC = () => {
   return (
-    <ResumeContainer>
-      <Heading>My Resume</Heading>
+    <Layout>
+      <ResumeContainer>
+        <Heading>My Resume</Heading>
 
-      <SectionTitle>Skills</SectionTitle>
-      <List>
-        <ListItem>
-          Proficient in Java, C#, PHP, TypeScript, JavaScript, Kotlin
-        </ListItem>
-        <ListItem>
-          Experienced with front-end technologies (HTML, CSS, React)
-        </ListItem>
-        <ListItem>
-          Strong database management skills (MySQL, PostgreSQL)
-        </ListItem>
-        <ListItem>
-          Skilled in software development and web application design
-        </ListItem>
-        <ListItem>Familiar with version control (Git, GitHub)</ListItem>
-        <ListItem>Strong problem-solving and debugging skills</ListItem>
-      </List>
+        <SectionTitle>Skills</SectionTitle>
+        <List>
+          <ListItem>
+            Proficient in Java, C#, PHP, TypeScript, JavaScript, Kotlin
+          </ListItem>
+          <ListItem>
+            Experienced with front-end technologies (HTML, CSS, React)
+          </ListItem>
+          <ListItem>
+            Strong database management skills (MySQL, PostgreSQL)
+          </ListItem>
+          <ListItem>
+            Skilled in software development and web application design
+          </ListItem>
+          <ListItem>Familiar with version control (Git, GitHub)</ListItem>
+          <ListItem>Strong problem-solving and debugging skills</ListItem>
+        </List>
 
-      <SectionTitle>Education</SectionTitle>
-      <List>
-        <ListItem>
-          <strong>Holland College</strong> – Bachelor of Computer Information
-          Systems, 2024
-        </ListItem>
-      </List>
+        <SectionTitle>Education</SectionTitle>
+        <List>
+          <ListItem>
+            <strong>Holland College</strong> – Bachelor of Computer Information
+            Systems, 2024
+          </ListItem>
+        </List>
 
-      <SectionTitle>Work Experience</SectionTitle>
-      <List>
-        <ListItem>
-          <strong>Software Developer Intern</strong> – XYZ Corp. (2023 - 2024)
-        </ListItem>
-        <ListItem>
-          <strong>Junior Web Developer</strong> – ABC Technologies (2022 - 2023)
-        </ListItem>
-      </List>
+        <SectionTitle>Work Experience</SectionTitle>
+        <List>
+          <ListItem>
+            <strong>Software Developer Intern</strong> – XYZ Corp. (2023 - 2024)
+          </ListItem>
+          <ListItem>
+            <strong>Junior Web Developer</strong> – ABC Technologies (2022 -
+            2023)
+          </ListItem>
+        </List>
 
-      <SectionTitle>Certifications</SectionTitle>
-      <List>
-        <ListItem>Certified Java Developer (2023)</ListItem>
-        <ListItem>Certified Web Developer (2022)</ListItem>
-      </List>
-    </ResumeContainer>
+        <SectionTitle>Certifications</SectionTitle>
+        <List>
+          <ListItem>Certified Java Developer (2023)</ListItem>
+          <ListItem>Certified Web Developer (2022)</ListItem>
+        </List>
+      </ResumeContainer>
+    </Layout>
   );
 };
 

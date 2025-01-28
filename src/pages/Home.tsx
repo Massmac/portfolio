@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import Layout from "../components/Layout";
 
 // Styled components for the Home page
 const HomeContainer = styled.div`
@@ -119,50 +120,51 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <HomeContainer>
-      <Heading>Welcome to My Portfolio</Heading>
+    <Layout>
+      <HomeContainer>
+        <Heading>Welcome to My Portfolio</Heading>
+        {/* Profile Card */}
+        <ProfileCard>
+          <ProfileImage src="../assets/profilePic.jpg" alt="Profile Picture" />
+          <ProfileName>Michael Tamatey</ProfileName>
+          <Description>
+            Driven and detail-oriented{" "}
+            <HighlightedText>Computer Information Systems</HighlightedText>{" "}
+            student at <HighlightedText>Holland College</HighlightedText>.
+            Proficient in <HighlightedText>Java</HighlightedText>,{" "}
+            <HighlightedText>C#</HighlightedText>,{" "}
+            <HighlightedText>PHP</HighlightedText>,{" "}
+            <HighlightedText>MySQL</HighlightedText>, and front-end technologies
+            like <HighlightedText>React</HighlightedText>. Dedicated to
+            delivering <HighlightedText>innovative solutions</HighlightedText>{" "}
+            and creating impactful software.
+          </Description>
+        </ProfileCard>
 
-      {/* Profile Card */}
-      <ProfileCard>
-        <ProfileImage src="../assets/profilePic.jpg" alt="Profile Picture" />
-        <ProfileName>Michael Tamatey</ProfileName>
-        <Description>
-          Driven and detail-oriented{" "}
-          <HighlightedText>Computer Information Systems</HighlightedText>{" "}
-          student at <HighlightedText>Holland College</HighlightedText>.
-          Proficient in <HighlightedText>Java</HighlightedText>,{" "}
-          <HighlightedText>C#</HighlightedText>,{" "}
-          <HighlightedText>PHP</HighlightedText>,{" "}
-          <HighlightedText>MySQL</HighlightedText>, and front-end technologies
-          like <HighlightedText>React</HighlightedText>. Dedicated to delivering{" "}
-          <HighlightedText>innovative solutions</HighlightedText> and creating
-          impactful software.
-        </Description>
-      </ProfileCard>
+        {/* Experience Card */}
+        <Card>
+          <CardTitle>Experience</CardTitle>
+          <CardDescription>
+            I have gained experience as a Software Developer Intern at XYZ Corp.
+            and Junior Web Developer at ABC Technologies, working on a variety
+            of exciting projects, from full-stack development to mobile apps.
+          </CardDescription>
+        </Card>
 
-      {/* Experience Card */}
-      <Card>
-        <CardTitle>Experience</CardTitle>
-        <CardDescription>
-          I have gained experience as a Software Developer Intern at XYZ Corp.
-          and Junior Web Developer at ABC Technologies, working on a variety of
-          exciting projects, from full-stack development to mobile apps.
-        </CardDescription>
-      </Card>
+        {/* Skills Card */}
+        <Card>
+          <CardTitle>Technical Skills</CardTitle>
+          <CardDescription>
+            Java, C#, PHP, React, TypeScript, MySQL, PostgreSQL, Git, Agile
+          </CardDescription>
+        </Card>
 
-      {/* Skills Card */}
-      <Card>
-        <CardTitle>Technical Skills</CardTitle>
-        <CardDescription>
-          Java, C#, PHP, React, TypeScript, MySQL, PostgreSQL, Git, Agile
-        </CardDescription>
-      </Card>
-
-      <ButtonContainer>
-        <Button onClick={() => navigate("/contact")}>Contact Me</Button>
-        <Button onClick={() => navigate("/projects")}>View Projects</Button>
-      </ButtonContainer>
-    </HomeContainer>
+        <ButtonContainer>
+          <Button onClick={() => navigate("/contact")}>Contact Me</Button>
+          <Button onClick={() => navigate("/projects")}>View Projects</Button>
+        </ButtonContainer>
+      </HomeContainer>
+    </Layout>
   );
 };
 

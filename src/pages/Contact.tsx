@@ -1,6 +1,7 @@
 // src/components/Contact.tsx
 import React from "react";
 import styled from "styled-components";
+import Layout from "../components/Layout";
 
 const ContactContainer = styled.div`
   text-align: center;
@@ -66,15 +67,17 @@ const SubmitButton = styled.button`
 
 const Contact: React.FC = () => {
   return (
-    <ContactContainer>
-      <Heading>Contact Me</Heading>
-      <Form>
-        <Input type="text" placeholder="Your Name" required />
-        <Input type="email" placeholder="Your Email" required />
-        <TextArea placeholder="Your Message" rows={5} required></TextArea>
-        <SubmitButton type="submit">Send</SubmitButton>
-      </Form>
-    </ContactContainer>
+    <Layout>
+      <ContactContainer>
+        <Heading>Contact Me</Heading>
+        <Form>
+          <Input type="text" placeholder="Your Name" required />
+          <Input type="email" placeholder="Your Email" required />
+          <TextArea placeholder="Your Message" rows={5} required></TextArea>
+          <SubmitButton type="submit">Send</SubmitButton>
+        </Form>
+      </ContactContainer>
+    </Layout>
   );
 };
 

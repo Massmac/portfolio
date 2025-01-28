@@ -1,6 +1,7 @@
 // src/components/Projects.tsx
 import React from "react";
 import styled from "styled-components";
+import Layout from "../components/Layout";
 
 const ProjectsContainer = styled.div`
   text-align: center;
@@ -62,17 +63,19 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <ProjectsContainer>
-      <Heading>Projects</Heading>
-      <ProjectList>
-        {projectData.map((project, index) => (
-          <ProjectCard key={index}>
-            <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectDescription>{project.description}</ProjectDescription>
-          </ProjectCard>
-        ))}
-      </ProjectList>
-    </ProjectsContainer>
+    <Layout>
+      <ProjectsContainer>
+        <Heading>Projects</Heading>
+        <ProjectList>
+          {projectData.map((project, index) => (
+            <ProjectCard key={index}>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
+            </ProjectCard>
+          ))}
+        </ProjectList>
+      </ProjectsContainer>
+    </Layout>
   );
 };
 

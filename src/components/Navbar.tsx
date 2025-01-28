@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
     <NavbarContainer>
       <NavbarContent>
         {/* Logo */}
-        <Logo>My Portfolio</Logo>
+        <Logo></Logo>
 
         {/* Navbar Links */}
         <NavLinks>
