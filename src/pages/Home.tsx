@@ -125,7 +125,7 @@ const Home: React.FC = () => {
         <Heading>Welcome to My Portfolio</Heading>
         {/* Profile Card */}
         <ProfileCard>
-          <ProfileImage src="../assets/profilePic.jpg" alt="Profile Picture" />
+          <ProfileImage src="../assets/profilePic.jpg" />
           <ProfileName>Michael Tamatey</ProfileName>
           <Description>
             Driven and detail-oriented{" "}

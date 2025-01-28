@@ -35,12 +35,30 @@ const ListItem = styled.li`
   text-align: left;
 `;
 
+const PdfContainer = styled.div`
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+`;
+
 const Resume: React.FC = () => {
   return (
     <Layout>
       <ResumeContainer>
         <Heading>My Resume</Heading>
 
+        {/* PDF Viewer Section */}
+        <PdfContainer>
+          <iframe src="/resume.pdf" title="Resume"></iframe>
+        </PdfContainer>
+
+        {/* Skills Section */}
         <SectionTitle>Skills</SectionTitle>
         <List>
           <ListItem>
@@ -59,6 +77,7 @@ const Resume: React.FC = () => {
           <ListItem>Strong problem-solving and debugging skills</ListItem>
         </List>
 
+        {/* Education Section */}
         <SectionTitle>Education</SectionTitle>
         <List>
           <ListItem>
@@ -67,6 +86,7 @@ const Resume: React.FC = () => {
           </ListItem>
         </List>
 
+        {/* Work Experience Section */}
         <SectionTitle>Work Experience</SectionTitle>
         <List>
           <ListItem>
@@ -78,6 +98,7 @@ const Resume: React.FC = () => {
           </ListItem>
         </List>
 
+        {/* Certifications Section */}
         <SectionTitle>Certifications</SectionTitle>
         <List>
           <ListItem>Certified Java Developer (2023)</ListItem>

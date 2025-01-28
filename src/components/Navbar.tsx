@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -37,8 +37,8 @@ const Logo = styled.h1`
   }
 `;
 
-// Styled component for the Navbar links
-const NavLinks = styled.div`
+// Styled component for the Navbar links container
+const NavLinks = styled.div<{ isOpen: boolean }>`
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -48,6 +48,15 @@ const NavLinks = styled.div`
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #007bff;
+    width: 100%;
+    height: 100vh;
+    transform: ${(props) =>
+      props.isOpen ? "translateX(0)" : "translateX(-100%)"};
+    transition: transform 0.3s ease;
   }
 `;
 
@@ -75,7 +84,7 @@ const NavLink = styled(Link)`
   }
 `;
 
-// Optional: Styled component for a hamburger menu (mobile only)
+// Styled component for the hamburger menu (mobile only)
 const Hamburger = styled.div`
   display: none;
   cursor: pointer;
@@ -84,7 +93,10 @@ const Hamburger = styled.div`
     display: block;
     width: 30px;
     height: 25px;
-    position: relative;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 200;
   }
 
   &::before,
@@ -127,24 +139,32 @@ const Hamburger = styled.div`
 `;
 
 const Navbar: React.FC = () => {
+  // State for managing the mobile menu toggle
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to toggle the menu
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <NavbarContainer>
       <NavbarContent>
         {/* Logo */}
-        <Logo></Logo>
+        <NavLink to="/">My Portfolio</NavLink>
+
+        {/* Hamburger Menu for Mobile */}
+        <Hamburger onClick={toggleMenu}>
+          <span></span>
+        </Hamburger>
 
         {/* Navbar Links */}
-        <NavLinks>
+        <NavLinks isOpen={isOpen}>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavLinks>
-
-        {/* Hamburger Menu for Mobile (Optional) */}
-        <Hamburger>
-          <span></span>
-        </Hamburger>
       </NavbarContent>
     </NavbarContainer>
   );
