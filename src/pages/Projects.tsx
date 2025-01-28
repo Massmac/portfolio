@@ -6,7 +6,7 @@ const ProjectsContainer = styled.div`
   text-align: center;
   margin: 50px auto;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 800px;
 `;
 
 const Heading = styled.h2`
@@ -16,9 +16,9 @@ const Heading = styled.h2`
 
 const ProjectList = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Stack items vertically */
   gap: 20px;
-  justify-content: center;
+  align-items: center; /* Center items horizontally */
   margin-top: 20px;
 `;
 
@@ -26,12 +26,15 @@ const ProjectCard = styled.div`
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 700px;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
+  transition: transform 0.3s ease;
 
   &:hover {
+    transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
 `;
@@ -48,9 +51,14 @@ const ProjectDescription = styled.p`
 
 const Projects: React.FC = () => {
   const projectData = [
-    { title: "Project One", description: "Description of project one." },
+    {
+      title: "Pressure Washing Service Platform - Android Mobile App",
+      description:
+        "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services from the convenience of their mobile devices.",
+    },
     { title: "Project Two", description: "Description of project two." },
     { title: "Project Three", description: "Description of project three." },
+    { title: "Project Four", description: "Description of project four." },
   ];
 
   return (
