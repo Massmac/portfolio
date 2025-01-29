@@ -5,9 +5,18 @@ import Layout from "../components/Layout";
 
 const ProjectsContainer = styled.div`
   text-align: center;
-  margin: 50px auto;
+  margin-top: 50px;
   padding: 20px;
-  max-width: 800px;
+  background: linear-gradient(
+    135deg,
+    rgb(0, 0, 255),
+    rgb(0, 128, 255)
+  ); /* Blue gradient */
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 1100px;
+  margin: 50px auto;
 `;
 
 const Heading = styled.h2`
