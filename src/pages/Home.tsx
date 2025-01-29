@@ -4,6 +4,17 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 import profilePic from "../assets/profilePic.jpg";
+import javascriptLogo from "../assets/javascriptLogo.png";
+import cLogo from "../assets/cLogo.png";
+import gitbucketLogo from "../assets/gitbucketLogo.png";
+import javaLogo from "../assets/javaLogo.png";
+import kotlinLogo from "../assets/kotlinLogo.jpeg";
+import mysqlLogo from "../assets/mysqlLogo.png";
+import phpLogo from "../assets/phpLogo.jpeg";
+import reactLogo from "../assets/reactLogo.png";
+import typescriptLogo from "../assets/typescriptLogo.png";
+import agileLogo from "../assets/agileLogo.jpg";
+import htmlcssLogo from "../assets/htmlcssLogo.png";
 
 // Styled components for the Home page
 const HomeContainer = styled.div`
@@ -12,7 +23,7 @@ const HomeContainer = styled.div`
   padding: 20px;
   background: linear-gradient(
     135deg,
-    rgb(0, 0, 255),
+    rgb(63, 71, 78),
     rgb(0, 128, 255)
   ); /* Blue gradient */
   color: white;
@@ -47,7 +58,7 @@ const ProfileImage = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #ffdd40;
+  border: 4px solid white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
 
@@ -129,13 +140,61 @@ const SkillItem = styled.li`
   align-items: center;
   gap: 10px;
 
+  img {
+    width: 25px; // You can adjust the size of the logos
+    height: 30px;
+    border-radius: 40%; // Make the image round
+    object-fit: cover; // Ensure the image fits well within the circle
+  }
+`;
+
+const SkillList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 15px; /* space between items */
+  list-style-type: none;
+  padding: 0;
+`;
+
+const SkillItemSoft = styled.li`
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   &::before {
     content: "✔";
     color: #ffdd40;
     font-weight: bold;
   }
 `;
+
+const skills = [
+  { src: javascriptLogo, alt: "JavaScript Logo", name: "JavaScript" },
+  { src: htmlcssLogo, alt: "HTML Logo", name: "HTML/CSS" },
+  { src: kotlinLogo, alt: "Kotlin Logo", name: "Kotlin" },
+  { src: typescriptLogo, alt: "TypeScript Logo", name: "TypeScript" },
+  { src: javaLogo, alt: "Java Logo", name: "Java" },
+  { src: reactLogo, alt: "React Logo", name: "React" },
+  { src: phpLogo, alt: "PHP Logo", name: "PHP" },
+  { src: mysqlLogo, alt: "MySQL Logo", name: "MySQL" },
+  { src: cLogo, alt: "C# Logo", name: "C#" },
+  { src: gitbucketLogo, alt: "Git & Bitbucket Logo", name: "Git & Bitbucket" },
+  { src: agileLogo, alt: "Agile Logo", name: "Agile Methodologies" },
+];
+
+// Function to shuffle the skills array
+const shuffleArray = (array: any[]) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
+  return array;
+};
+
 const Home: React.FC = () => {
+  const shuffledSkills = shuffleArray([...skills]); // Shuffle skills array
   const navigate = useNavigate();
 
   return (
@@ -145,7 +204,7 @@ const Home: React.FC = () => {
         {/* Profile Card */}
         <ProfileCard>
           <ProfileImage src={profilePic} />
-          <ProfileName>Michael Tamatey</ProfileName>
+          <ProfileName>Michael Tettey Tamatey</ProfileName>
           <Description>
             Driven and detail-oriented{" "}
             <HighlightedText>Computer Information Systems</HighlightedText>{" "}
@@ -223,33 +282,30 @@ const Home: React.FC = () => {
         {/* Skills Card */}
         <Card>
           <CardTitle>Technical Skills</CardTitle>
-          <SkillItem>JavaScript</SkillItem>
-          <SkillItem>HTML/CSS</SkillItem>
-          <SkillItem>Kotlin</SkillItem>
-          <SkillItem>TypeScript</SkillItem>
-          <SkillItem>Java</SkillItem>
-          <SkillItem>React</SkillItem>
-          <SkillItem>PHP</SkillItem>
-          <SkillItem>MySQL</SkillItem>
-          <SkillItem>C#</SkillItem>
-          <SkillItem>Git & Bitbucket</SkillItem>
-          <SkillItem>Agile Methodologies</SkillItem>
+          <SkillList>
+            {shuffledSkills.map((skill, index) => (
+              <SkillItem key={index}>
+                <img src={skill.src} alt={skill.alt} />
+                {skill.name}
+              </SkillItem>
+            ))}
+          </SkillList>
         </Card>
 
         <Card>
           <CardTitle>Soft Skills</CardTitle>
-          <SkillItem>Problem-Solving</SkillItem>
-          <SkillItem>Time Management</SkillItem>
-          <SkillItem>Time Management</SkillItem>
-          <SkillItem>Good Communication Skills</SkillItem>
-          <SkillItem>Leadership</SkillItem>
+          <SkillItemSoft>Problem-Solving</SkillItemSoft>
+          <SkillItemSoft>Time Management</SkillItemSoft>
+          <SkillItemSoft>Time Management</SkillItemSoft>
+          <SkillItemSoft>Good Communication Skills</SkillItemSoft>
+          <SkillItemSoft>Leadership</SkillItemSoft>
         </Card>
 
         <Card>
           <CardTitle>Education</CardTitle>
           <CardDescription>
-            DIPLOMA: COMPUTER INFORMATION SYSTEMS, Holland College,
-            Charlottetown, PE. 2023-Current.
+            DIPLOMA: 2023-Current - COMPUTER INFORMATION SYSTEMS, Holland
+            College, Charlottetown, PE, C1A 4Z1.
           </CardDescription>
         </Card>
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavbarContainer = styled.nav`
   position: sticky;
   top: 0;
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  background: linear-gradient(135deg, rgb(77, 81, 85), #0056b3);
   padding: 15px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -146,9 +146,7 @@ const Navbar: React.FC = () => {
 
         {/* Navbar Links */}
         <NavLinks isOpen={isOpen}>
-          <NavLink to="/">Home</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavLinks>
       </NavbarContent>

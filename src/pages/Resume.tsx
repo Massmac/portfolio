@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 const ResumeContainer = styled.div`
   text-align: center;
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: rgb(63, 71, 78);
 `;
 
 const Heading = styled.h2`
@@ -39,53 +39,83 @@ const Resume: React.FC = () => {
   return (
     <Layout>
       <ResumeContainer>
-        <Heading>My Resume</Heading>
+        <Heading>Michael Tettey Tamatey</Heading>
+
+        {/* Summary Section */}
+        <SectionTitle>Summary</SectionTitle>
+        <p>
+          Driven and detail-oriented Computer Information Systems student at
+          Holland College with hands-on experience in software development,
+          database management, and web application design. Proficient in Java,
+          C#, PHP, MySQL, and front-end technologies (HTML, CSS, JavaScript).
+        </p>
 
         {/* Skills Section */}
         <SectionTitle>Skills</SectionTitle>
         <List>
-          <ListItem>
-            Proficient in Java, C#, PHP, TypeScript, JavaScript, Kotlin
-          </ListItem>
-          <ListItem>
-            Experienced with front-end technologies (HTML, CSS, React)
-          </ListItem>
-          <ListItem>
-            Strong database management skills (MySQL, PostgreSQL)
-          </ListItem>
-          <ListItem>
-            Skilled in software development and web application design
-          </ListItem>
-          <ListItem>Familiar with version control (Git, GitHub)</ListItem>
-          <ListItem>Strong problem-solving and debugging skills</ListItem>
+          <ListItem>JavaScript, C#, Java, HTML/CSS, MySQL, PHP, React</ListItem>
+          <ListItem>Critical Thinking, Problem-Solving</ListItem>
+          <ListItem>Package Handling, Production Documentation</ListItem>
+          <ListItem>PowerPoint</ListItem>
         </List>
 
         {/* Education Section */}
         <SectionTitle>Education</SectionTitle>
         <List>
           <ListItem>
-            <strong>Holland College</strong> – Bachelor of Computer Information
-            Systems, 2024
+            Diploma: Computer Information Systems - Holland College (Expected
+            04/2025)
           </ListItem>
         </List>
 
-        {/* Work Experience Section */}
-        <SectionTitle>Work Experience</SectionTitle>
+        {/* Projects Section */}
+        <SectionTitle>Projects</SectionTitle>
         <List>
           <ListItem>
-            <strong>Software Developer Intern</strong> – XYZ Corp. (2023 - 2024)
+            <strong>Pressure Washing Service Platform (Mobile App)</strong> -
+            Java, Firebase
           </ListItem>
           <ListItem>
-            <strong>Junior Web Developer</strong> – ABC Technologies (2022 -
-            2023)
+            <strong>Mass Enterprise Inventory Management System</strong> - Java,
+            Spring Boot, MySQL
+          </ListItem>
+          <ListItem>
+            <strong>Windows Forms Database Management System</strong> - C#, .NET
+          </ListItem>
+          <ListItem>
+            <strong>Dynamic Website with User Authentication</strong> - PHP,
+            MySQL
+          </ListItem>
+          <ListItem>
+            <strong>Product Showcase Webpage</strong> - HTML, CSS, JavaScript
           </ListItem>
         </List>
 
-        {/* Certifications Section */}
-        <SectionTitle>Certifications</SectionTitle>
+        {/* Experience Section */}
+        <SectionTitle>Experience</SectionTitle>
         <List>
-          <ListItem>Certified Java Developer (2023)</ListItem>
-          <ListItem>Certified Web Developer (2022)</ListItem>
+          <ListItem>
+            <strong>Package Handler</strong> - FedEx (09/2023 - Present)
+          </ListItem>
+          <ListItem>
+            <strong>Cashier</strong> - HartStores (09/2023 - Present)
+          </ListItem>
+          <ListItem>
+            <strong>Housekeeping Attendant</strong> - UPEI (04/2023 - 09/2023)
+          </ListItem>
+          <ListItem>
+            <strong>Manager</strong> - Mass Enterprise (02/2022 - 11/2022)
+          </ListItem>
+        </List>
+
+        {/* Referees Section */}
+        <SectionTitle>Referees</SectionTitle>
+        <List>
+          <ListItem>Sunday Agyekum - Senior Manager, Federal Express</ListItem>
+          <ListItem>
+            Donnie McKinnon - Learning Manager, Holland College
+          </ListItem>
+          <ListItem>Candace Ripley - Store Manager, HartStores</ListItem>
         </List>
       </ResumeContainer>
     </Layout>

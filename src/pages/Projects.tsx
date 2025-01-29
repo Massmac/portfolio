@@ -1,7 +1,8 @@
 // src/components/Projects.tsx
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import htmlcssLogo from "../assets/htmlcssLogo.png";
 
 const ProjectsContainer = styled.div`
   text-align: center;
@@ -9,7 +10,7 @@ const ProjectsContainer = styled.div`
   padding: 20px;
   background: linear-gradient(
     135deg,
-    rgb(0, 0, 255),
+    rgb(63, 71, 78),
     rgb(0, 128, 255)
   ); /* Blue gradient */
   color: white;
@@ -20,8 +21,10 @@ const ProjectsContainer = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: 2rem;
-  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffdd40;
 `;
 
 const ProjectList = styled.div`
@@ -33,7 +36,7 @@ const ProjectList = styled.div`
 `;
 
 const ProjectCard = styled.div`
-  background: #fff;
+  background: rgb(81, 116, 148);
   border: 1px solid #ddd;
   border-radius: 10px;
   width: 100%;
@@ -52,24 +55,68 @@ const ProjectCard = styled.div`
 const ProjectTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #333;
 `;
 
-const ProjectDescription = styled.p`
+const ProjectDescription = styled.p<{ isExpanded: boolean }>`
   font-size: 1rem;
-  color: #666;
+  color: white;
+  max-height: ${(props) => (props.isExpanded ? "none" : "100px")};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 0.3s ease;
+`;
+
+const ProjectImage = styled.img`
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+const ReadMoreButton = styled.button`
+  background-color: #ffdd40;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e0c144;
+  }
 `;
 
 const Projects: React.FC = () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
   const projectData = [
     {
       title: "Pressure Washing Service Platform - Android Mobile App",
       description:
-        "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services from the convenience of their mobile devices.",
+        "An Android mobile application counterpart to the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services from the convenience of their mobile devices.",
+      image: htmlcssLogo, // Placeholder for image
     },
-    { title: "Project Two", description: "Description of project two." },
-    { title: "Project Three", description: "Description of project three." },
-    { title: "Project Four", description: "Description of project four." },
+    {
+      title: "Project Two",
+      description: "Description of project two.",
+      image: "https://via.placeholder.com/600",
+    },
+    {
+      title: "Project Three",
+      description: "Description of project three.",
+      image: "https://via.placeholder.com/600",
+    },
   ];
+
+  const handleToggleDescription = (index: number) => {
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <Layout>
@@ -79,7 +126,13 @@ const Projects: React.FC = () => {
           {projectData.map((project, index) => (
             <ProjectCard key={index}>
               <ProjectTitle>{project.title}</ProjectTitle>
-              <ProjectDescription>{project.description}</ProjectDescription>
+              <ProjectImage src={project.image} alt={project.title} />
+              <ProjectDescription isExpanded={expandedIndex === index}>
+                {project.description}
+              </ProjectDescription>
+              <ReadMoreButton onClick={() => handleToggleDescription(index)}>
+                {expandedIndex === index ? "Show Less" : "Read More"}
+              </ReadMoreButton>
             </ProjectCard>
           ))}
         </ProjectList>
