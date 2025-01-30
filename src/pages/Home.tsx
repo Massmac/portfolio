@@ -19,7 +19,7 @@ import htmlcssLogo from "../assets/htmlcssLogo.png";
 // Styled components for the Home page
 const HomeContainer = styled.div`
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 20px;
   background: linear-gradient(
     135deg,
@@ -29,16 +29,10 @@ const HomeContainer = styled.div`
   color: white;
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  max-width: 1200px;
-  margin: 50px auto;
+  max-width: 1100px;
+  margin: 10px auto;
 `;
 
-const Heading = styled.h1`
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: rgb(247, 203, 8);
-`;
 const Headings = styled.h2`
   color: rgb(231, 225, 225);
   font-size: 2rem;
@@ -88,10 +82,6 @@ const Card = styled.div`
   transition: transform 0.3s ease;
   text-align: left;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  gap: 20px; /* space between items */
-
   &:hover {
     transform: scale(1.05);
   }
@@ -108,6 +98,8 @@ const CardTitle = styled.h3`
 const CardDescription = styled.p`
   font-size: 1.1rem;
   color: #f0f0f0;
+
+  grid-column: span 3; /* Span all 3 columns */
 `;
 
 const ButtonContainer = styled.div`
@@ -154,8 +146,6 @@ const SkillItem = styled.li`
 `;
 
 const SkillList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
   gap: 30px; /* space between items */
   list-style-type: none;
   padding: 0;
@@ -226,66 +216,66 @@ const Home: React.FC = () => {
         {/* Experience Card */}
         <Card>
           <CardTitle>Experience</CardTitle>
+          <Headings> Web Development</Headings>
           <CardDescription>
-            <Headings> Web Development</Headings>
             Skilled in building responsive and dynamic web applications using
             Java, Spring Boot, HTML, CSS, and JavaScript. Experienced in
             integrating RESTful APIs and handling database interactions with
             JDBC and Hibernate for seamless backend operations.
           </CardDescription>
+          <Headings> Mobile Development</Headings>
           <CardDescription>
-            <Headings> Mobile Development</Headings>
             Proficient in developing Android applications using Kotlin in
             Android Studio. Experienced in implementing user authentication,
             real-time data synchronization, and push notifications. Skilled in
             creating offline-first applications and optimizing UI/UX for mobile
             users.
           </CardDescription>
+          <Headings> Database Management</Headings>
           <CardDescription>
-            <Headings> Database Management</Headings>
             Experienced in database design and optimization using MySQL. Skilled
             in managing relational databases with Spring Data JPA and
             implementing efficient queries for improved performance and
             scalability.
           </CardDescription>
+          <Headings> API Development</Headings>
           <CardDescription>
-            <Headings> API Development</Headings>
             Skilled in building robust and scalable RESTful APIs using Spring
             Boot. Experienced in integrating third-party APIs and ensuring
             secure, efficient data exchange between frontend and backend
             systems.
           </CardDescription>
+          <Headings> Full-Stack Development</Headings>
           <CardDescription>
-            <Headings> Full-Stack Development</Headings>
             Proficient in full-stack development using Java, JavaScript ,Php,
             C#, TypeScript, and Kotlin for backend and HTML/CSS and React for
             frontend. Experienced in managing user authentication, business
             logic, and multithreading to ensure a scalable and secure
             application architecture.
           </CardDescription>
+          <Headings> Version Control</Headings>
           <CardDescription>
-            <Headings> Version Control</Headings>
             Proficient in Git and Bitbucket for version control and
             collaboration. Experienced in branching strategies, pull requests,
             and resolving merge conflicts to maintain clean and efficient
             codebases.
           </CardDescription>
+          <Headings> Package Handler at FedEx</Headings>
           <CardDescription>
-            <Headings> Package Handler at FedEx</Headings>
             Efficiently load and unload packages, inspecting for damage and
             ensuring accurate reporting. Sort and process 200+ packages daily
             using handheld scanners, maintaining 98% accuracy, and assisting in
             loading trucks for timely dispatch.
           </CardDescription>
+          <Headings> Cashier at HartStores</Headings>
           <CardDescription>
-            <Headings> Cashier at HartStores</Headings>
             Provide exceptional customer service, operate the cash register for
             various payment methods, process refunds, and manage price checks.
             Assist in stocking, organizing, and improving product displays while
             ensuring smooth store operations.
           </CardDescription>
+          <Headings> Manager at Mass Enterprise</Headings>
           <CardDescription>
-            <Headings> Manager at Mass Enterprise</Headings>
             Implemented strategies to enhance customer loyalty and optimize
             budgets. Provided leadership during organizational changes,
             monitored expenditures, and ensured cost-effectiveness while
