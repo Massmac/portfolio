@@ -138,11 +138,6 @@ const Button = styled.button`
   }
 `;
 
-const HighlightedText = styled.span`
-  color: #ffdd40;
-  font-weight: bold;
-`;
-
 const SkillItem = styled.li`
   font-size: 1.1rem;
   margin-bottom: 5px;
@@ -211,26 +206,16 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <HomeContainer>
-        <Heading>Welcome to My Portfolio</Heading>
         {/* Profile Card */}
         <ProfileCard>
           <ProfileImage src={profilePic} />
           <ProfileName>Michael Tettey Tamatey</ProfileName>
           <Description>
-            Driven and detail-oriented{" "}
-            <HighlightedText>Computer Information Systems</HighlightedText>{" "}
-            student at <HighlightedText>Holland College</HighlightedText>.
-            Proficient in <HighlightedText>Java</HighlightedText>,{" "}
-            <HighlightedText>C#</HighlightedText>,{" "}
-            <HighlightedText>PHP</HighlightedText>,{" "}
-            <HighlightedText>MySQL</HighlightedText>,
-            <HighlightedText>JavaScript</HighlightedText>,
-            <HighlightedText>TypeScript</HighlightedText>, and front-end
-            technologies like <HighlightedText>HTML</HighlightedText>,
-            <HighlightedText>CSS</HighlightedText>,{" "}
-            <HighlightedText>React</HighlightedText>. Dedicated to delivering{" "}
-            <HighlightedText>innovative solutions</HighlightedText> and creating
-            impactful software.
+            Driven and detail-oriented Computer Information Systems student at
+            Holland College. Proficient in Java, C#, PHP, MySQL, JavaScript,
+            TypeScript, and front-end technologies like HTML, CSS, React.
+            Dedicated to delivering innovative solutions and creating impactful
+            software.
             <Link to="/projects" style={{ color: "white" }}>
               {" "}
               Click here to view my PROJECTS.
