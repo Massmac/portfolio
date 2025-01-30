@@ -12,7 +12,7 @@ import kotlinLogo from "../assets/kotlinLogo.jpeg";
 import mysqlLogo from "../assets/mysqlLogo.png";
 import phpLogo from "../assets/phpLogo.jpeg";
 import reactLogo from "../assets/reactLogo.png";
-import typescriptLogo from "../assets/typescriptLogo.png";
+import typescriptLogo from "../assets/typescriptlogo.png";
 import agileLogo from "../assets/agileLogo.jpg";
 import htmlcssLogo from "../assets/htmlcssLogo.png";
 
