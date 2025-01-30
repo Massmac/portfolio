@@ -12,7 +12,7 @@ import kotlinLogo from "../assets/kotlinLogo.jpeg";
 import mysqlLogo from "../assets/mysqlLogo.png";
 import phpLogo from "../assets/phpLogo.jpeg";
 import reactLogo from "../assets/reactLogo.png";
-
+import typescriptLogo from "../assets/typescriptLogo.png";
 import agileLogo from "../assets/agileLogo.jpg";
 import htmlcssLogo from "../assets/htmlcssLogo.png";
 
@@ -185,7 +185,7 @@ const skills = [
   { src: javascriptLogo, alt: "JavaScript Logo", name: "JavaScript" },
   { src: htmlcssLogo, alt: "HTML Logo", name: "HTML/CSS" },
   { src: kotlinLogo, alt: "Kotlin Logo", name: "Kotlin" },
-
+  { src: typescriptLogo, alt: "TypeScript Logo", name: "TypeScript" },
   { src: javaLogo, alt: "Java Logo", name: "Java" },
   { src: reactLogo, alt: "React Logo", name: "React" },
   { src: phpLogo, alt: "PHP Logo", name: "PHP" },
