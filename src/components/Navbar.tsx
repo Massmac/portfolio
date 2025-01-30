@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavbarContainer = styled.nav`
   position: sticky;
   top: 0;
-  background: linear-gradient(135deg, rgb(77, 81, 85), #0056b3);
+  background: linear-gradient(135deg, rgb(77, 81, 85), rgb(97, 111, 126));
   padding: 15px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -37,7 +37,7 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: #007bff;
+    background-color: rgb(63, 69, 75);
     width: 100%;
     height: 100vh;
     transform: ${(props) =>

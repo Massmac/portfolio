@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import htmlcssLogo from "../assets/htmlcssLogo.png";
+import massEnterpriseLogo from "../assets/massEn.jpeg";
+import pressureWashingLogo from "../assets/pWashing.png";
 
 const ProjectsContainer = styled.div`
   text-align: center;
@@ -11,7 +13,7 @@ const ProjectsContainer = styled.div`
   background: linear-gradient(
     135deg,
     rgb(63, 71, 78),
-    rgb(0, 128, 255)
+    rgb(45, 95, 150)
   ); /* Blue gradient */
   color: white;
   border-radius: 15px;
@@ -68,7 +70,7 @@ const ProjectDescription = styled.p<{ isExpanded: boolean }>`
 `;
 
 const ProjectImage = styled.img`
-  width: 40%;
+  width: 60%;
   max-width: 400px;
   height: auto;
   margin-top: 15px;
@@ -99,18 +101,19 @@ const Projects: React.FC = () => {
     {
       title: "Pressure Washing Service Platform - Android Mobile App",
       description:
-        "An Android mobile application counterpart to the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services from the convenience of their mobile devices.",
+        "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services." +
+        "The app integrates seamlessly with the web platform, providing features for service selection, booking management, payment processing, and an admin dashboard for monitoring revenue and client requests",
+      image: pressureWashingLogo, // Placeholder for image
+    },
+    {
+      title: "Mass Enterprise Inventory Management System - Web Application",
+      description: "" + "" + "" + "" + "",
+      image: massEnterpriseLogo, // Placeholder for image
+    },
+    {
+      title: "Pressure Washing Service Platform - Web Application",
+      description: "" + "" + "" + "" + "",
       image: htmlcssLogo, // Placeholder for image
-    },
-    {
-      title: "Project Two",
-      description: "Description of project two.",
-      image: "https://via.placeholder.com/600",
-    },
-    {
-      title: "Project Three",
-      description: "Description of project three.",
-      image: "https://via.placeholder.com/600",
     },
   ];
 

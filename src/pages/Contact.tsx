@@ -8,7 +8,7 @@ const ContactContainer = styled.div`
   margin: 50px auto;
   padding: 20px;
   max-width: 600px;
-  background: rgb(48, 85, 117);
+  background: rgb(81, 98, 116);
   border-radius: 10px;
 `;
 
@@ -29,10 +29,11 @@ const Contact: React.FC = () => {
       <ContactContainer>
         <Heading>Contact Me</Heading>
         <p>
-          Driven and detail-oriented Computer Information Systems student at
-          Holland College with hands-on experience in software development,
-          database management, and web application design. Proficient in Java,
-          C#, PHP, MySQL, and front-end technologies (HTML, CSS, JavaScript).
+          Feel free to reach out if you have any questions or would like to
+          discuss potential opportunities. I’m always happy to connect and
+          collaborate! You can contact me via email or phone. Leave a message,
+          and I’ll get back to you as soon as possible. Looking forward to
+          hearing from you!.
         </p>
         <InfoText>Email: tamateymichael99@gmail.com</InfoText>
         <InfoText>Phone: 902-916-3728</InfoText>

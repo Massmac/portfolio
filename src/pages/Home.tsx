@@ -24,12 +24,12 @@ const HomeContainer = styled.div`
   background: linear-gradient(
     135deg,
     rgb(63, 71, 78),
-    rgb(0, 128, 255)
+    rgb(53, 79, 107)
   ); /* Blue gradient */
   color: white;
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 50px auto;
 `;
 
@@ -37,7 +37,11 @@ const Heading = styled.h1`
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffdd40;
+  color: rgb(247, 203, 8);
+`;
+const Headings = styled.h2`
+  color: rgb(231, 225, 225);
+  font-size: 2rem;
 `;
 
 const ProfileCard = styled.div`
@@ -84,6 +88,10 @@ const Card = styled.div`
   transition: transform 0.3s ease;
   text-align: left;
 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* space between items */
+
   &:hover {
     transform: scale(1.05);
   }
@@ -93,6 +101,8 @@ const CardTitle = styled.h3`
   font-size: 1.6rem;
   color: #ffdd40;
   margin-bottom: 10px;
+  grid-column: span 3; /* Span all 3 columns */
+  text-align: center;
 `;
 
 const CardDescription = styled.p`
@@ -151,9 +161,10 @@ const SkillItem = styled.li`
 const SkillList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  gap: 15px; /* space between items */
+  gap: 30px; /* space between items */
   list-style-type: none;
   padding: 0;
+  align-items: center;
 `;
 
 const SkillItemSoft = styled.li`
@@ -212,10 +223,14 @@ const Home: React.FC = () => {
             Proficient in <HighlightedText>Java</HighlightedText>,{" "}
             <HighlightedText>C#</HighlightedText>,{" "}
             <HighlightedText>PHP</HighlightedText>,{" "}
-            <HighlightedText>MySQL</HighlightedText>, and front-end technologies
-            like <HighlightedText>React</HighlightedText>. Dedicated to
-            delivering <HighlightedText>innovative solutions</HighlightedText>{" "}
-            and creating impactful software.
+            <HighlightedText>MySQL</HighlightedText>,
+            <HighlightedText>JavaScript</HighlightedText>,
+            <HighlightedText>TypeScript</HighlightedText>, and front-end
+            technologies like <HighlightedText>HTML</HighlightedText>,
+            <HighlightedText>CSS</HighlightedText>,{" "}
+            <HighlightedText>React</HighlightedText>. Dedicated to delivering{" "}
+            <HighlightedText>innovative solutions</HighlightedText> and creating
+            impactful software.
             <Link to="/projects" style={{ color: "white" }}>
               {" "}
               Click here to view my PROJECTS.
@@ -227,55 +242,70 @@ const Home: React.FC = () => {
         <Card>
           <CardTitle>Experience</CardTitle>
           <CardDescription>
-            As a <HighlightedText>student at Holland College</HighlightedText>,
-            I have gained hands-on experience in software development, database
-            management, and system analysis through various projects and
-            assignments. My coursework has covered programming in Java, C#, PHP,
-            and web technologies, along with practical applications in database
-            design, networking, and cybersecurity. I have worked on multiple
-            projects, including inventory management systems, pressure washing
-            service platforms, and student registration applications,
-            demonstrating my ability to apply theoretical knowledge to
-            real-world solutions. Additionally, I have developed strong
-            problem-solving, analytical, and teamwork skills, preparing me for a
-            career in software development and IT solutions.
+            <Headings> Web Development</Headings>
+            Skilled in building responsive and dynamic web applications using
+            Java, Spring Boot, HTML, CSS, and JavaScript. Experienced in
+            integrating RESTful APIs and handling database interactions with
+            JDBC and Hibernate for seamless backend operations.
           </CardDescription>
           <CardDescription>
-            As a <HighlightedText>Package Handler at FedEx</HighlightedText>, I
-            efficiently load and unload packages from delivery vehicles using
-            both manual and powered equipment. I inspect packages for damage or
-            defects, ensuring accurate reporting of any issues. My role involves
-            transporting parcels between loading docks, delivery vehicles, and
-            postal facilities while maintaining 98% accuracy in sorting and
-            delivery preparation. Using a handheld scanner, I sort and process
-            over 200 packages daily based on destination and service type.
-            Additionally, I assist in loading delivery trucks to ensure timely
-            and organized dispatch of shipments.
+            <Headings> Mobile Development</Headings>
+            Proficient in developing Android applications using Kotlin in
+            Android Studio. Experienced in implementing user authentication,
+            real-time data synchronization, and push notifications. Skilled in
+            creating offline-first applications and optimizing UI/UX for mobile
+            users.
           </CardDescription>
           <CardDescription>
-            As a <HighlightedText>Cashier at HartStores</HighlightedText>, I
-            provide exceptional customer service by assisting shoppers with
-            inquiries about products, store policies, and procedures. I
-            efficiently operate the cash register and POS system to handle
-            transactions, including cash, credit card, and check payments.
-            Additionally, I issue receipts, process refunds, and manage price
-            checks for special orders or discounts. Beyond cashier duties, I
-            contribute to store operations by stocking shelves, tracking
-            inventory, organizing merchandise, and improving product displays to
-            enhance sales. I also work closely with management to perform
-            various assigned tasks, ensuring smooth store operations.
+            <Headings> Database Management</Headings>
+            Experienced in database design and optimization using MySQL. Skilled
+            in managing relational databases with Spring Data JPA and
+            implementing efficient queries for improved performance and
+            scalability.
           </CardDescription>
           <CardDescription>
-            As a <HighlightedText>Manager at Mass Enterprise </HighlightedText>,
-            I played a key role in enhancing customer satisfaction, optimizing
-            budgets, and leading organizational growth. I developed and
-            implemented strategies to improve customer loyalty, ensuring a
-            strong client base. Additionally, I monitored budgets and
-            expenditures to maintain cost-effectiveness without compromising
-            quality standards. During times of organizational change or crises,
-            I provided strong leadership and guidance to ensure stability. I
-            also oversaw staff performance, addressing issues promptly to
-            maintain a productive and efficient workforce.
+            <Headings> API Development</Headings>
+            Skilled in building robust and scalable RESTful APIs using Spring
+            Boot. Experienced in integrating third-party APIs and ensuring
+            secure, efficient data exchange between frontend and backend
+            systems.
+          </CardDescription>
+          <CardDescription>
+            <Headings> Full-Stack Development</Headings>
+            Proficient in full-stack development using Java, JavaScript ,Php,
+            C#, TypeScript, and Kotlin for backend and HTML/CSS and React for
+            frontend. Experienced in managing user authentication, business
+            logic, and multithreading to ensure a scalable and secure
+            application architecture.
+          </CardDescription>
+          <CardDescription>
+            <Headings> Version Control</Headings>
+            Proficient in Git and Bitbucket for version control and
+            collaboration. Experienced in branching strategies, pull requests,
+            and resolving merge conflicts to maintain clean and efficient
+            codebases.
+          </CardDescription>
+          <CardDescription>
+            <Headings> Package Handler at FedEx</Headings>
+            Efficiently load and unload packages, inspecting for damage and
+            ensuring accurate reporting. Sort and process 200+ packages daily
+            using handheld scanners, maintaining 98% accuracy, and assisting in
+            loading trucks for timely dispatch.
+          </CardDescription>
+          <CardDescription>
+            <Headings> Cashier at HartStores</Headings>
+            Provide exceptional customer service, operate the cash register for
+            various payment methods, process refunds, and manage price checks.
+            Assist in stocking, organizing, and improving product displays while
+            ensuring smooth store operations.
+          </CardDescription>
+          <CardDescription>
+            <Headings> Manager at Mass Enterprise</Headings>
+            Implemented strategies to enhance customer loyalty and optimize
+            budgets. Provided leadership during organizational changes,
+            monitored expenditures, and ensured cost-effectiveness while
+            overseeing staff performance and maintaining a productive, efficient
+            workforce.
           </CardDescription>
         </Card>
 
