@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Presure Washing - Android App",
+      "imageSrc": "/assets/skills/javaLogo.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Mass Enterprise Inventory System- Web App",
+      "imageSrc": "/assets/projects/massEn.jpeg",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "Express", "Node", "Sass"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Presure Washing - Web App",
+      "imageSrc": "/assets/projects/pWashing.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]
