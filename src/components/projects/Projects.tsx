@@ -4,10 +4,10 @@ import "./Projects.css";
 const projectsData = [
   {
     title: "Mass Enterprise Inventory System",
-    imageSrc: "../assets/projects/projectOne.jpg", // Replace with your image path
+    imageSrc: "/assets/projects/projectOne.jpg", // Replace with your image path
     summary:
       "A brief summary of what this project is about, its goals, and technologies used.",
-    caseStudyLink: ".../pages/projects/ProjectOne",
+    caseStudyLink: ".../pages/ProjectOne",
   },
   {
     title: "Pressure Washing - Mobile Application",
