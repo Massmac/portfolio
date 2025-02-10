@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectThree: React.FC = () => {
-  return <div></div>;
+  return <div>Hello 3</div>;
 };
 
 export default ProjectThree;

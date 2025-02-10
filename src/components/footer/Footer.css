@@ -1,0 +1,33 @@
+/* Ensure the footer always sticks at the bottom */
+.footer {
+    background-color: white;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      font-size: 0.3rem;
+    }
+  }
+  
+  /* Flexbox container to make the layout sticky footer */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures that the layout takes at least the full height of the viewport */
+  }
+  
+  .main-container > * {
+    flex-grow: 1; /* This makes sure the content takes up the available space */
+  }

@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectTwo: React.FC = () => {
-  return <div></div>;
+  return <div>Hello 2</div>;
 };
 
 export default ProjectTwo;
