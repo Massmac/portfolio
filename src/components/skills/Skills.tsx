@@ -1,70 +1,61 @@
 import React from "react";
 import "./Skills.css";
+import cLogo from "../../assets/skills/cLogo.png";
+import agileLogo from "../../assets/skills/agileLogo.jpg";
+import gitBucketLogo from "../../assets/skills/gitbucketLogo.png";
+import htmlcssLogo from "../../assets/skills/htmlcssLogo.png";
+import javaLogo from "../../assets/skills/javaLogo.png";
+import javascriptLogo from "../../assets/skills/javascriptLogo.png";
+import kotlinLogo from "../../assets/skills/kotlinLogo.jpeg";
+import mysqlLogo from "../../assets/skills/mysqlLogo.png";
+import phpLogo from "../../assets/skills/phpLogo.jpeg";
+import reactLogo from "../../assets/skills/reactLogo.png";
+import typescriptlogo from "../../assets/skills/typescriptlogo.png";
 
 const skillsData = [
   {
     title: "HTML/CSS",
-    imageSrc: "/assets/skills/htmlcssLogo.png",
+    imageSrc: htmlcssLogo,
   },
   {
     title: "C#",
-    imageSrc: "/assets/skills/CLogo.png",
+    imageSrc: cLogo,
   },
   {
     title: "Java",
-    imageSrc: "/assets/skills/javaLogo.png",
+    imageSrc: javaLogo,
   },
   {
     title: "React",
-    imageSrc: "/assets/skills/reactLogo.png",
+    imageSrc: reactLogo,
   },
   {
     title: "Kotlin",
-    imageSrc: "/assets/skills/kotlinLogo.jpeg",
+    imageSrc: kotlinLogo,
   },
   {
     title: "JavaScript",
-    imageSrc: "/assets/skills/javascriptLogo.png",
+    imageSrc: javascriptLogo,
   },
   {
     title: "Agile",
-    imageSrc: "/assets/skillss/agileLogo.jpg",
+    imageSrc: agileLogo,
   },
   {
     title: "Version Control",
-    imageSrc: "/assets/skills/gitbucketLogo.png",
+    imageSrc: gitBucketLogo,
   },
   {
     title: "PHP",
-    imageSrc: "/assets/skills/phpLogo.jpeg",
+    imageSrc: phpLogo,
   },
   {
     title: "TypeScript",
-    imageSrc: "/assets/skills/typescriptLogo.png",
+    imageSrc: typescriptlogo,
   },
   {
     title: "MySQL",
-    imageSrc: "/assets/skills/mysqlLogo.png",
-  },
-  {
-    title: "Leadership",
-    imageSrc: "/assets/skills/leadershipLogo.jpg",
-  },
-  {
-    title: "Problem Solving",
-    imageSrc: "/assets/skills/problemLogo.png",
-  },
-  {
-    title: "Production Management",
-    imageSrc: "/assets/skills/productionLogo.jpg",
-  },
-  {
-    title: "Time Management",
-    imageSrc: "/assets/skills/timeLogo.png",
-  },
-  {
-    title: "Attention to Detail",
-    imageSrc: "/assets/skills/detailLogo.png",
+    imageSrc: mysqlLogo,
   },
 ];
 

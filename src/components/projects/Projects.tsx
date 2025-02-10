@@ -1,27 +1,29 @@
 import React from "react";
 import "./Projects.css";
+import massEn from "../../assets/projects/massEn.jpeg";
+import pressureWashing from "../../assets/projects/pWashing.png";
 
 const projectsData = [
   {
     title: "Mass Enterprise Inventory System",
-    imageSrc: "/assets/projects/projectOne.jpg", // Replace with your image path
+    imageSrc: massEn, // Replace with your image path
     summary:
       "A brief summary of what this project is about, its goals, and technologies used.",
-    caseStudyLink: ".../pages/ProjectOne",
+    caseStudyLink: "projects/one",
   },
   {
     title: "Pressure Washing - Mobile Application",
-    imageSrc: "./assets/projects/massEn.jpeg", // Replace with your image path
+    imageSrc: pressureWashing, // Replace with your image path
     summary:
       "This project focuses on solving a specific problem using advanced techniques and tools.",
-    caseStudyLink: "/pages/projects/ProjectTwo",
+    caseStudyLink: "projects/two",
   },
   {
     title: "Pressure Washing - Web Application",
-    imageSrc: "/assets/projects/projectThree.jpg", // Replace with your image path
+    imageSrc: pressureWashing, // Replace with your image path
     summary:
       "An innovative project that addresses real-world challenges in an efficient way.",
-    caseStudyLink: "./pages/projects/ProjectThree",
+    caseStudyLink: "projects/three",
   },
 ];
 
@@ -39,7 +41,7 @@ const Projects: React.FC = () => {
             />
             <h3>{project.title}</h3>
             <p>{project.summary}</p>
-            <a href={project.caseStudyLink} className="case-study-link">
+            <a href={project.caseStudyLink || ""} className="case-study-link">
               View Case Study
             </a>
           </div>
