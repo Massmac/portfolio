@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
           </li>
           <li className="nav-item">
             <Link to="./Contact" className="nav-link">
-              Contact
+              Contact Me
             </Link>
           </li>
         </ul>
