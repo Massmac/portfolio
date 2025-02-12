@@ -1,5 +1,5 @@
 import React from "react";
-import "./Experience.css";
+import "./ExperienceCard.css";
 
 const experienceData = [
   {
