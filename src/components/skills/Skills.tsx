@@ -10,7 +10,7 @@ import kotlinLogo from "../../assets/skills/kotlinLogo.jpeg";
 import mysqlLogo from "../../assets/skills/mysqlLogo.png";
 import phpLogo from "../../assets/skills/phpLogo.jpeg";
 import reactLogo from "../../assets/skills/reactLogo.png";
-import typescriptlogo from "../../assets/skills/typescriptlogo.png";
+import mikeLogo from "../../assets/skills/mikeLogo.png";
 
 const skillsData = [
   {
@@ -51,7 +51,7 @@ const skillsData = [
   },
   {
     title: "TypeScript",
-    imageSrc: typescriptlogo,
+    imageSrc: mikeLogo,
   },
   {
     title: "MySQL",

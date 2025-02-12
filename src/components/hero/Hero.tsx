@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profilePic from "./profilePic.jpg";
+import profilePic from "./profileMike.jpeg";
 const Hero: React.FC = () => {
   return (
     <section className="hero">
@@ -8,9 +8,11 @@ const Hero: React.FC = () => {
         <img src={profilePic} alt="Michael Tamatey" className="profile-pic" />
         <h1>Michael Tettey Tamatey</h1>
         <p>
-          A passionate software developer specializing in web and mobile
-          applications. I love building solutions that enhance user experiences
-          and solve real-world problems.
+          Driven and detail-oriented final year Computer Information Systems
+          student at Holland College. Proficient in Java, C#, PHP, MySQL,
+          JavaScript, and TypeScript, and front-end technologies like HTML, CSS,
+          and React. Dedicated to delivering innovative solutions and creating
+          impactful software.
         </p>
       </div>
     </section>

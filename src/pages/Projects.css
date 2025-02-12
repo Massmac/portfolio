@@ -1,62 +1,128 @@
 .case-study-container {
-    padding: 30px;
-    background: #f5f5f5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    width: 100%;
-    max-width: 1200px; /* Limits width to prevent full-screen stretch */
-    margin: 40px auto; /* Centers the section without full height */
-    border-radius: 10px; /* Adds subtle rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 30px;
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1200px; /* Limits width to prevent full-screen stretch */
+  margin: 40px auto; /* Centers the section without full height */
+  border-radius: 10px; /* Adds subtle rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
 
+.case-study-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.case-study-container section {
+  margin-bottom: 20px;
+}
+
+.case-study-container h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.case-study-container p,
+.case-study-container ul {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.case-study-container ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.case-study-container p {
+  line-height: 1.5;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1024px) {
+  .case-study-container {
+    padding: 25px;
   }
-  
+
   .case-study-header {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.9rem;
   }
-  
-  .case-study-container section {
-    margin-bottom: 20px;
-  }
-  
+
   .case-study-container h2 {
-    font-size: 1.5rem;
-    color: black;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
   }
-  
+
+  .case-study-container p,
+  .case-study-container ul {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-study-container {
+    padding: 20px;
+  }
+
+  .case-study-header {
+    font-size: 1.8rem;
+  }
+
+  .case-study-container h2 {
+    font-size: 1.3rem;
+  }
+
   .case-study-container p,
   .case-study-container ul {
     font-size: 1rem;
-    color: #333;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .case-study-container {
+    padding: 15px;
+  }
+
+  .case-study-header {
+    font-size: 1.6rem;
+  }
+
+  .case-study-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .case-study-container p,
   .case-study-container ul {
-    list-style: disc;
-    padding-left: 20px;
+    font-size: 0.95rem;
   }
-  
-  .case-study-container p {
-    line-height: 1.5;
+}
+
+.back-home {
+  margin: 20px 0;
+  text-align: left; 
+}
+
+.back-home a {
+  display: inline-block;
+  padding: 9px 18px;
+  font-size: 1rem;
+  color: white;
+  background-color: #12253a; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-home a:hover {
+  background-color: #12253a; 
+  transform: scale(1.05); /
+}
+
+@media (max-width: 768px) {
+  .back-home a {
+    font-size: 0.9rem; /* Slightly smaller text on smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller devices */
   }
-  
-  @media (max-width: 768px) {
-    .case-study-container {
-      padding: 20px;
-    }
-  
-    .case-study-header {
-      font-size: 1.8rem;
-    }
-  
-    .case-study-container h2 {
-      font-size: 1.3rem;
-    }
-  
-    .case-study-container p,
-    .case-study-container ul {
-      font-size: 0.95rem;
-    }
-  }
+}
