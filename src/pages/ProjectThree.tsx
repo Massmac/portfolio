@@ -11,7 +11,7 @@ const ProjectThree: React.FC = () => {
       </div>
       <div className="case-study-container">
         <h1 className="case-study-header">
-          Pressure Washing Service - Mobile Application
+          Pressure Washing Service - Mobile Application.
         </h1>
 
         <section className="summary">
