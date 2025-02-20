@@ -8,7 +8,8 @@ const projectsData = [
     title: "Mass Enterprise Inventory System",
     imageSrc: massEn, // Replace with your image path
     summary:
-      "A brief summary of what this project is about, its goals, and technologies used.",
+      "This is a web application that enables users to schedule and managed" +
+      "residential and commercial pressure washing services.",
     caseStudyLink: "projects/one",
   },
   {
