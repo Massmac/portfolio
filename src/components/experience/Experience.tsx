@@ -3,6 +3,17 @@ import "./ExperienceCard.css";
 
 const experienceData = [
   {
+    company: "CGI",
+    position: "Student Software Developer",
+    date: "Feb, 2025 - Present",
+    bulletPoints: [
+      "Working on a project as a software developer and tester.",
+      "Developing and testing software solutions to meet business requirements.",
+      "Collaborating with team members to ensure high-quality deliverables.",
+      "Assisting in debugging and improving application performance.",
+    ],
+  },
+  {
     company: "Federal Express",
     position: "Package Handler",
     date: "Sept, 2023 - Present",

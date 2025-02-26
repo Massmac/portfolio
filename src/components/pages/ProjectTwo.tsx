@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css"; // Import CSS for styling
-import Hero from "../components/hero/Hero";
+import Hero from "../hero/Hero";
 
 const ProjectTwo: React.FC = () => {
   return (

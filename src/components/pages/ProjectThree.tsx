@@ -1,8 +1,8 @@
 import React from "react";
 import "./Projects.css"; // Import CSS for styling
-import Hero from "../components/hero/Hero";
+import Hero from "../hero/Hero";
 
-const ProjectOne: React.FC = () => {
+const ProjectThree: React.FC = () => {
   return (
     <>
       {" "}
@@ -11,7 +11,7 @@ const ProjectOne: React.FC = () => {
       </div>
       <div className="case-study-container">
         <h1 className="case-study-header">
-          Mass Enterprise Inventory System Management
+          Pressure Washing Service - Mobile Application.
         </h1>
 
         <section className="summary">
@@ -36,7 +36,7 @@ const ProjectOne: React.FC = () => {
           <ul>
             <li>
               <strong>Backend:</strong> Java (Spring Boot) for a secure and
-              scalable server-side framework, and RESTful APIs.
+              scalable server-side framework
             </li>
             <br></br>
             <li>
@@ -194,4 +194,4 @@ const ProjectOne: React.FC = () => {
   );
 };
 
-export default ProjectOne;
+export default ProjectThree;
