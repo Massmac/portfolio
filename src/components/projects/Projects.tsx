@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
             <h3>{project.title}</h3>
             <p>{project.summary}</p>
             <p>{project.techUsed}</p>
-            <Link to={project.caseStudyLink || ""} className="case-study-link">
+            <Link to={project.caseStudyLink} className="case-study-link">
               View Case Study
             </Link>
           </div>
