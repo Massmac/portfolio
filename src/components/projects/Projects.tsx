@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import massEn from "../../assets/projects/massEnterprise.png";
 import pressureWashing from "../../assets/projects/pWashing.png";
+import massMobile from "../../assets/projects/Mobile.jpg";
 import { Link } from "react-router-dom";
 
 const projectsData = [
@@ -18,7 +19,7 @@ const projectsData = [
   },
   {
     title: "Pressure Washing - Mobile Application",
-    imageSrc: pressureWashing,
+    imageSrc: massMobile,
     summary:
       "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services. " +
       "The app integrates seamlessly with the web platform, providing features for selection, booking management, payment processing, and an admin dashboard for monitoring revenue and client requests.",
