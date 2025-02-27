@@ -14,7 +14,7 @@ const projectsData = [
       "Additionally, the system offers monthly income tracking, detailed reporting, and role-based access control for Admins and Employees.",
     techUsed:
       "Technologies used: Java, Spring Boot, MySQL, Spring Security, TypeScript, React, HTML, CSS ",
-    caseStudyLink: "/projects/one",
+    caseStudyLink: "projects/one",
   },
   {
     title: "Pressure Washing - Mobile Application",
@@ -23,7 +23,7 @@ const projectsData = [
       "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services. " +
       "The app integrates seamlessly with the web platform, providing features for selection, booking management, payment processing, and an admin dashboard for monitoring revenue and client requests.",
     techUsed: "Technologies: Kotlin, Android Studio,Java, REST APIs",
-    caseStudyLink: "/projects/two",
+    caseStudyLink: "projects/two",
   },
   {
     title: "Pressure Washing - Web Application",
@@ -34,7 +34,7 @@ const projectsData = [
       "It includes an admin dashboard for business owners to monitor requests, client details, and revenue, with a feature to calculate monthly income based on bookings and discounts.",
     techUsed:
       "Technologies: Java, Spring Boot, MySQL, HTML, CSS, JDBC, File I/O ",
-    caseStudyLink: "/projects/three",
+    caseStudyLink: "projects/three",
   },
 ];
 
