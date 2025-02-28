@@ -45,8 +45,8 @@ const ProjectThree: React.FC = () => {
             </li>
             <br></br>
             <li>
-              <strong>Database:</strong> MySQL/PostgreSQL for structured and
-              reliable data storage.
+              <strong>Database:</strong> MySQL for structured and reliable data
+              storage.
             </li>
             <br></br>
             <li>
