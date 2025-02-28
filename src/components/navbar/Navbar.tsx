@@ -13,9 +13,24 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="./Contact" className="nav-link">
-              Contact Me
+            <Link to="projects/one" className="nav-link">
+              Project One
             </Link>
+            <li className="nav-item">
+              <Link to="projects/two" className="nav-link">
+                Project Two
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="projects/three" className="nav-link">
+                Project Three
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="./Contact" className="nav-link">
+                Contact Me
+              </Link>
+            </li>
           </li>
         </ul>
       </div>

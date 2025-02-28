@@ -11,18 +11,18 @@ const ProjectTwo: React.FC = () => {
       </div>
       <div className="case-study-container">
         <h1 className="case-study-header">
-          Pressure Washing Service - Web Application
+          Pressure Washing Service - Molbile Application
         </h1>
 
         <section className="summary">
           <h2>Overview</h2>
           <p>
-            This is a web application that enables users to schedule and manage
-            residential and commercial pressure washing services. The
-            application supports service selection, views, and updates to
-            appointment bookings. It includes an admin dashboard for business
-            owners to monitor requests, client details, and revenue, with a
-            feature to calculate monthly income based on bookings and discounts.
+            An Android mobile application for the Pressure Washing Service
+            Platform, enabling users to book and manage residential and
+            commercial pressure washing services. The app integrates seamlessly
+            with the web platform, providing features for service selection,
+            booking management, payment processing, and an admin dashboard for
+            monitoring revenue and client requests.
           </p>
         </section>
 
@@ -30,18 +30,13 @@ const ProjectTwo: React.FC = () => {
           <h2>Technologies Used</h2>
           <ul>
             <li>
-              <strong>Backend:</strong> Java (Spring Boot) for a secure and
-              scalable server-side framework, and RESTful APIs.
+              <strong>Backend/Frontend:</strong> Kotlin and XML for an intuitive
+              and dynamic user interface.
             </li>
             <br></br>
             <li>
-              <strong>Frontend:</strong> HTML and CSS for an intuitive and
-              dynamic user interface.
-            </li>
-            <br></br>
-            <li>
-              <strong>Database:</strong> MySQL for structured and reliable data
-              storage.
+              <strong>Development Tools:</strong> Android Studio for seamless
+              mobile development and testing.
             </li>
             <br></br>
           </ul>

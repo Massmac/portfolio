@@ -11,7 +11,7 @@ const ProjectThree: React.FC = () => {
       </div>
       <div className="case-study-container">
         <h1 className="case-study-header">
-          Pressure Washing Service - Mobile Application.
+          Pressure Washing Service - Web Application.
         </h1>
 
         <section className="summary">
@@ -40,23 +40,13 @@ const ProjectThree: React.FC = () => {
             </li>
             <br></br>
             <li>
-              <strong>Frontend:</strong> React.js and typescript for an
-              intuitive and dynamic user interface.
+              <strong>Frontend:</strong> HTML and CSS for an intuitive and
+              dynamic user interface.
             </li>
             <br></br>
             <li>
               <strong>Database:</strong> MySQL for structured and reliable data
               storage.
-            </li>
-            <br></br>
-            <li>
-              <strong>Security:</strong> Spring Security for role-based
-              authentication and secure access control.
-            </li>
-            <br></br>
-            <li>
-              <strong>Data Handling:</strong> Hibernate & JPA for seamless data
-              persistence and ORM (Object Relational Mapping).
             </li>
           </ul>
         </section>
@@ -65,28 +55,21 @@ const ProjectThree: React.FC = () => {
           <h2>Key Features</h2>
           <ul>
             <li>
-              <strong>Real-time Inventory Tracking: </strong> Automatically
-              updates stock levels, prevents overselling or shortages, and
-              generates low-stock alerts for timely restocking.
+              <strong>Customer Booking System:</strong> Displays service
+              options, offers calendar-based scheduling, and provides discounts
+              for multi-day bookings and large packages.
             </li>
             <br></br>
             <li>
-              <strong>User Management with Role-Based Access Control: </strong>
-              Admin Features: Manage customers, inventory, users, and reports.
-              Employee Features: Access order processing. Ensures security by
-              restricting unauthorized access.
+              <strong>Admin Dashboard for Business Owners:</strong>
+              Tracks revenue with monthly reports, displays customer and booking
+              details, and manages service requests.
             </li>
             <br></br>
             <li>
-              <strong>Sales & Revenue Reporting: </strong>
-              Offers financial insights, generates monthly income reports, and
-              supports demand forecasting and inventory optimization.
-            </li>
-            <br></br>
-            <li>
-              <strong>E-commerce Integration: </strong>Facilitates product
-              browsing, secure online payments, and automated invoice generation
-              for smooth order processing.
+              <strong>Real-time Revenue Reporting: </strong>
+              Automatically calculates monthly revenue and displays trends with
+              service-type breakdowns.
             </li>
             <br></br>
           </ul>
@@ -95,64 +78,38 @@ const ProjectThree: React.FC = () => {
         <section className="problems">
           <h2>Problem Statement</h2>
           <p>
-            Mass Enterprise faced significant operational challenges in
-            inventory management, including:{" "}
+            Pressure washing businesses often face challenges in managing
+            bookings, tracking revenue, and maintaining customer relationships
+            due to manual processes. Inefficiencies in tracking service requests
+            can result in scheduling conflicts, lost revenue, and poor customer
+            satisfaction.{" "}
           </p>
-          <ul>
-            <li>
-              <strong> Stock Discrepancies: </strong>Errors due to manual
-              tracking methods leading to incorrect stock levels.
-            </li>
-            <br></br>
-            <li>
-              <strong>Order Processing Delays: </strong>
-              Inefficiencies in tracking product availability resulting in slow
-              order fulfillment.
-            </li>
-            <br></br>
-            <li>
-              <strong> Financial Losses: </strong>
-              Lack of accurate sales insights and stock mismanagement causing
-              revenue decline.
-            </li>
-            <br></br>
-            <li>
-              <strong>Security Risks:</strong> Inadequate access control makes
-              the system vulnerable to unauthorized modifications.
-            </li>
-          </ul>
         </section>
 
         <section className="solutions">
           <h2>Solutions Implemented</h2>
           <ul>
             <li>
-              <strong>Automated Stock Management </strong>Ensures inventory
-              accuracy with real-time updates, AI-driven demand forecasting, and
-              barcode scanning for quick stock management.
+              <strong>Automated Booking and Scheduling: </strong>Streamlines
+              service management, applies multi-day booking discounts, and
+              prevents conflicts with real-time updates.
             </li>
             <br></br>
             <li>
-              <strong>Role-Based Access Control </strong>
-              Provides a secure login system, role-based access control, and
-              activity logging for accountability and security.
+              <strong>Admin Dashboard for Oversight: </strong>
+              Tracks revenue with monthly summaries, centralizes bookings and
+              payments, and provides real-time service request notificationsy.
             </li>
             <br></br>
             <li>
-              <strong>Data-Driven Reporting & Analytics </strong>
-              Real-time dashboard, graphical sales reports, and predictive
-              modeling for inventory optimization.
+              <strong>Revenue and Financial Management: </strong>
+              Automates revenue calculations, provides real-time insights by
+              service type, and offers exportable reports for tax and analysis.
             </li>
             <br></br>
             <li>
-              <strong>Seamless E-commerce Experience </strong>Mobile-friendly
-              interface, secure checkout, and customer order tracking.
-            </li>
-            <br></br>
-            <li>
-              <strong>Cloud Backup & Enhanced Security </strong>Encrypted data
-              storage, scheduled cloud backups, and regular security updates for
-              protection.
+              <strong>nhanced Customer Experience: </strong>Mobile-friendly
+              booking, and discounts for repeat and bulk bookings.
             </li>
           </ul>
         </section>
@@ -161,28 +118,23 @@ const ProjectThree: React.FC = () => {
           <h2>Results</h2>
           <ul>
             <li>
-              <strong>90% Improvement in Inventory Accuracy:</strong>{" "}
-              Significant reduction in stock errors and mismanagement.
+              <strong>85% Improvement in Scheduling Efficiency:</strong>{" "}
+              Automated booking system reduces manual errors.
             </li>
             <br></br>
             <li>
-              <strong>60% Reduction in Order Processing Time:</strong> Faster
-              fulfillment and enhanced customer satisfaction.
+              <strong>50% Increase in Customer Retention:</strong> Discounts and
+              seamless user experience encourage repeat bookings.
             </li>
             <br></br>
             <li>
-              <strong>Enhanced Security:</strong> Robust role-based access and
-              encrypted transactions.
+              <strong>90% Accuracy in Revenue Tracking:</strong> Real-time
+              updates ensure accurate reporting.
             </li>
             <br></br>
             <li>
-              <strong>40% Revenue Growth Through Online Transactions:</strong>{" "}
-              Increased customer reach and sales volume.
-            </li>
-            <br></br>
-            <li>
-              <strong>Data-Driven Decision Making:</strong> Improved stock level
-              optimization and revenue forecasting.
+              <strong>Enhanced Operational Control:</strong> Admin dashboard
+              improves request and revenue oversight.
             </li>
           </ul>
         </section>

@@ -23,7 +23,7 @@ const projectsData = [
     summary:
       "An Android mobile application counterpart the Pressure Washing Service Platform, enabling users to book and manage residential and commercial pressure washing services. " +
       "The app integrates seamlessly with the web platform, providing features for selection, booking management, payment processing, and an admin dashboard for monitoring revenue and client requests.",
-    techUsed: "Technologies: Kotlin, Android Studio,Java, REST APIs",
+    techUsed: "Technologies: Kotlin, Android Studio, REST APIs",
     caseStudyLink: "/projects/two",
   },
   {
